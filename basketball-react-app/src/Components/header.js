@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Route, Link } from "react-router-dom";
-import logo from "./logo.png";
+// import logo from "./logo.png";
 import "./header.css";
 
 class Header extends Component {
@@ -8,7 +8,7 @@ class Header extends Component {
     return (
       <header className="headerContainer">
         <div className="topnav">
-        <img className="logo" src={logo} alt="logo" />
+        {/* <img className="logo" src={logo} alt="logo" /> */}
           <a className="active" href="/">
             Home
           </a>

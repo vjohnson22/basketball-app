@@ -10,6 +10,8 @@ import Delete from "./Components/Delete";
 import WebFont from "webfontloader";
 import Update from "./Components/Update";
 import Header from "./Components/header";
+import logo from "../src/pictures/logo.png";
+
 
 class App extends Component {
   constructor() {
@@ -35,12 +37,12 @@ class App extends Component {
     
   // };
 
-  handleReset = evt => {
-    evt.preventDefault();
-    this.setState({
-      matchup: []
-    });
-  };
+  // handleReset = evt => {
+  //   evt.preventDefault();
+  //   this.setState({
+  //     matchup: []
+  //   });
+  // };
 
   // getData = () => {
   //   axios.get("https://basketball-era.herokuapp.com").then(res => {
@@ -57,12 +59,21 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
+        <nav className="topnav">
+          <img className="logo" src={logo} alt="logo" />
+          <a className="active" href="/">
+            Home
+          </a>
+          <a href="/compare">ONExONE</a>
+          <a href="/create">Add Players</a>
+          <a href="/update">Update Player</a>
+          <a href="/delete">Delete Player</a>
         {/* <Search
           handleClick={this.handleClick}
           players={this.state.players}
           className="searchContainer"
         /> */}
+        </nav>
         <main>
           <Route path="/" exact render={routerProps => <Home />} />
           <Route
@@ -70,10 +81,10 @@ class App extends Component {
             exact
             render={routerProps => (
               <Comparison
-                handleReset={this.handleReset}
-                matchup={this.state.matchup}
-                players={this.state.players}
-                handleClick={this.handleClick}
+                // handleReset={this.handleReset}
+                // matchup={this.state.matchup}
+                // players={this.state.players}
+                // handleClick={this.handleClick}
                 
               />
             )}

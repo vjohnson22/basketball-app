@@ -1,4 +1,4 @@
-.App {
+.App2 {
   font-family: "Josefin Sans", sans-serif;
   display: grid;
   grid-template-columns: 300px auto;
@@ -17,6 +17,8 @@
 }
 
 
+
+
 .headerContainer {
   text-align: center;
   grid-column-start: 1;
@@ -24,6 +26,9 @@
   /* border: 2px solid purple */
 }
 
+.headerContainer * {
+  border: purple 4px solid;
+}
 
 .searchContainer {
   width: 340px;
@@ -71,4 +76,37 @@ main {
 
 img {
   object-fit: scale-down;
+}
+
+.logo{
+  height: 85px;
+  padding-right: 500px;
+  padding-top: 20px;
+}
+
+.topnav {
+  background-color: #0000;
+  overflow: hidden;
+  line-height: 30px;
+}
+
+.topnav a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px black;
+}
+
+.topnav a:hover {
+  background-color: grey;
+  color: black;
+}
+
+.topnav a.active {
+  color: red ;
 }

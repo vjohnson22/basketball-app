@@ -3,6 +3,7 @@ import "./Comparison.css";
 import PlayerMatch from "./PlayerMatch";
 import axios from 'axios'
 import Search from '../Components/Search'
+// import "../App.css";
 
 class Comparison extends Component {
   constructor() {
@@ -62,7 +63,7 @@ class Comparison extends Component {
     });
 
     return (
-      <div>
+      <div className='body'>
         <Search
           handleClick={this.handleClick}
           players={this.state.players}

@@ -1,9 +1,18 @@
+.body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .mainAppContainer{
    
-    margin-left: 50px;
+    /* margin-left: 50px; */
     
   
 
+}
+
+.mainAppContainer * {
+    border: black 4px solid;
 }
 
 .cardsContainer {
