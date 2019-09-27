@@ -85,6 +85,8 @@ img {
 }
 
 .topnav {
+  display: flex;
+  align-items: center;
   background-color: #0000;
   overflow: hidden;
   line-height: 30px;

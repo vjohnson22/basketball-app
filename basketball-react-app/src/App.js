@@ -5,7 +5,7 @@ import Comparison from "./Components/Comparison";
 import Home from "./Components/Home/Home";
 import { Route, Link } from "react-router-dom";
 import "./App.css";
-import Create from "./Components/Create";
+import Create from "./Components/Create/Create";
 import Delete from "./Components/Delete";
 import WebFont from "webfontloader";
 import Update from "./Components/Update";
@@ -60,7 +60,7 @@ class App extends Component {
     return (
       <div className="App">
           <nav className="topnav">
-            <img className="logo" src={logo} alt="logo" />
+            <Link to='/compare' className="active" ><img className="logo" src={logo} alt="logo" /></Link>
             <Link to='/' className="active" >Home</Link>
             <Link to="/compare">ONExONE</Link>
             <Link to="/create">Add Players</Link>
