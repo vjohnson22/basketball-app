@@ -59,39 +59,20 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <nav className="topnav">
-          <img className="logo" src={logo} alt="logo" />
-          <a className="active" href="/">
-            Home
-          </a>
-          <a href="/compare">ONExONE</a>
-          <a href="/create">Add Players</a>
-          <a href="/update">Update Player</a>
-          <a href="/delete">Delete Player</a>
-        {/* <Search
-          handleClick={this.handleClick}
-          players={this.state.players}
-          className="searchContainer"
-        /> */}
-        </nav>
-        <main>
-          <Route path="/" exact render={routerProps => <Home />} />
-          <Route
-            path="/compare"
-            exact
-            render={routerProps => (
-              <Comparison
-                // handleReset={this.handleReset}
-                // matchup={this.state.matchup}
-                // players={this.state.players}
-                // handleClick={this.handleClick}
-                
-              />
-            )}
-          />
-          <Route path="/create" exact render={() => <Create />} />
-          <Route path="/delete" exact render={() => <Delete />} />
-          <Route path="/update" exact render={() => <Update />} />
+          <nav className="topnav">
+            <img className="logo" src={logo} alt="logo" />
+            <Link to='/' className="active" >Home</Link>
+            <Link to="/compare">ONExONE</Link>
+            <Link to="/create">Add Players</Link>
+            <Link to="/update">Update Player</Link>
+            <Link to="/delete">Delete Player</Link>
+          </nav>
+          <main>
+            <Route path="/" exact component={Home} />
+            <Route path="/compare" exact component={Comparison}/>     
+            <Route path="/create" exact component={Create} />
+            <Route path="/delete" exact component= {Delete} />
+            <Route path="/update" exact component ={Update} />
         </main>
       </div>
     );
