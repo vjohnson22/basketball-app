@@ -76,35 +76,35 @@ class Create extends Component {
             <h1>Add Player</h1>
                 <div></div>
                 
-                    <h2>Player Name: </h2>
+                    <h4>Player Name: </h4>
                     <input name='name' placeholder="Player Name" value ={this.state.name} onChange = {this.handleName}></input>
                 
                 
-                    <h2>Career Points Per Game: </h2>
+                    <h4>Career Points Per Game: </h4>
                     <input name='ppg' placeholder="Points Per Game" value ={this.state.ppg} onChange = {this.handlePpg}></input>
                                
-                    <h2>Career Assists Per Game: </h2>
+                    <h4>Career Assists Per Game: </h4>
                     <input name='apg' placeholder="Assists Per Game" value ={this.state.apg} onChange = {this.handleApg}></input>
                 
-                    <h2>Career Rebounds Per Game: </h2>
+                    <h4>Career Rebounds Per Game: </h4>
                     <input name='rpg' placeholder="Rebounds Per Game" value ={this.state.rpg} onChange = {this.handleRpg}></input>
                 
                 
-                    <h2>Career Steals Per Game: </h2>
+                    <h4>Career Steals Per Game: </h4>
                     <input name='spg' placeholder="Steals Per Game" value ={this.state.spg} onChange = {this.handleSpg}></input>
                                
-                    <h2>Career Blocks Per Game: </h2>
+                    <h4>Career Blocks Per Game: </h4>
                     <input name='bpg' placeholder="Blocks Per Game" value ={this.state.bpg} onChange = {this.handleBpg}></input>
                 
                 
-                    <h2>Rookie Season: </h2>
+                    <h4>Rookie Season: </h4>
                     <input name='startYear' placeholder="Start Year" value ={this.state.startYear} onChange = {this.handleStartYear}></input>
                 
-                    <h2>Final Season: </h2>
+                    <h4>Final Season: </h4>
                     <input name='endYear' placeholder="Last Year in League" value ={this.state.endYear} onChange = {this.handleEndYear}></input>
                 
                 
-                    <h2>Player Image Url: </h2>
+                    <h4>Player Image Url: </h4>
                     <input name='image' placeholder="Image URL" value ={this.state.image} onChange = {this.handleImage}></input>
                  
                 <button onClick= {this.handleSubmit}>Submit</button>

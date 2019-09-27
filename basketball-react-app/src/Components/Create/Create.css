@@ -10,4 +10,6 @@
     grid-column: 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width: 50%;
 }
+
