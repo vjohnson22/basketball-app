@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {Route, Link} from "react-router-dom";
-import "./home.css"
+import "./Home.css"
 
 import video from "./NBAmix.mp4";
 
