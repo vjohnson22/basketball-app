@@ -1,14 +1,32 @@
 .whole-card{
     background-color:#fbf579;
-    padding: 10px;
-    border-radius: 20px;
-    height: 620px;
+    /* padding: 10px; */
+    /* border-radius: 20px; */
+    /* height: 550px; */
     shadow: -8px;
-    text-shadow: 2px 2px 4px #000000;
+    /* text-shadow: 2px 2px 4px #000000; */
     box-shadow: 5px 10px #888888;
+    border: 4px solid black;
+    text-align: center;
+    width: 350px;
+    height: 500px;
 }
 
+.whole-card * {
+    /* border: 4px solid green; */
+}
 
 .card-img-top{
     border-radius: 20px;
+    max-height: 80%;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.card-body *{
+    
+    margin: 0 auto;    
+}
+.card-body {
+    margin: 20px 0 0 0 ;
 }

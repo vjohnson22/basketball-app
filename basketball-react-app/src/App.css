@@ -1,20 +1,22 @@
 .App {
   font-family: "Josefin Sans", sans-serif;
-  display: grid;
+  /* display: grid;
   grid-template-columns: 300px auto;
-  grid-template-rows: 100px auto auto;
+  grid-template-rows: 100px auto auto; */
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  overflow: auto;
+  overflow: auto; 
   background: #F3904F;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #3B4371, #F3904F);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
-  color: white;
+  /* color: white; */
 }
+
+
 
 
 .headerContainer {
@@ -24,6 +26,9 @@
   /* border: 2px solid purple */
 }
 
+.headerContainer * {
+  border: purple 4px solid;
+}
 
 .searchContainer {
   width: 340px;
@@ -66,9 +71,44 @@
 }
 
 main {
-  height: auto;
+  /* height: 100%; */
 }
 
 img {
   object-fit: scale-down;
+}
+
+.logo{
+  height: 85px;
+  padding-right: 500px;
+  padding-top: 20px;
+}
+
+.topnav {
+  display: flex;
+  align-items: center;
+  background-color: #0000;
+  overflow: hidden;
+  line-height: 30px;
+}
+
+.topnav a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px black;
+}
+
+.topnav a:hover {
+  background-color: grey;
+  color: black;
+}
+
+.topnav a.active {
+  color: red ;
 }
