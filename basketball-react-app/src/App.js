@@ -23,38 +23,7 @@ class App extends Component {
     };
   }
   
-  // handleClick = (player, evt) => {
-  //   evt.preventDefault();
-  //   if (this.state.matchup.length < 2) {
-  //     this.setState({ matchup: [...this.state.matchup, { player }] });
-  //   }
-  //   if (this.state.matchup.length === 2) {
-  //     const arr = [...this.state.matchup, { player }];
-  //     const newArr = arr.pop();
-  //     this.setState({ matchup: [newArr] });
-  //   }
-
-    
-  // };
-
-  // handleReset = evt => {
-  //   evt.preventDefault();
-  //   this.setState({
-  //     matchup: []
-  //   });
-  // };
-
-  // getData = () => {
-  //   axios.get("https://basketball-era.herokuapp.com").then(res => {
-  //     this.setState({
-  //       players: res.data
-  //     });
-  //   });
-  // };
-
-  // componentDidMount() {
-  //   this.getData();
-  // }
+  
 
   render() {
     return (

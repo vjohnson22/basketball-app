@@ -3,7 +3,7 @@ import "./Comparison.css";
 import PlayerMatch from "./PlayerMatch";
 import axios from 'axios'
 import Search from '../Components/Search'
-// import "../App.css";
+
 
 class Comparison extends Component {
   constructor() {
@@ -69,11 +69,14 @@ class Comparison extends Component {
           players={this.state.players}
           className="searchContainer"
         />
-        <div className="mainAppContainer">
+        <div >
           <button className="reset-btn" onClick={this.handleReset}>reset</button>
-        <div className="cardsContainer">{playerMatch}</div>
-        {/* insert win logic component here, bring results from the lower components to state here */}
-      </div>
+        
+          <div className="cardsContainer">
+            {playerMatch}
+          </div>
+       
+        </div>
       </div>
     );
   }

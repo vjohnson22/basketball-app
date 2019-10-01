@@ -139,40 +139,9 @@ class Match2 extends Component {
 
     let difference = [ppgDif,apgDif,rpgDif,bpgDif,spgDif]
     return (
-     <div>
-     {/* <div className="grid">
-        <span />
-        <span>Player</span>
-        <span>Top for Era</span>
-        <span>% Difference</span>
-
-        <div>PPG:</div>
-        <div>{this.props.player.ppg}</div>
-        <div>{ppgEra}</div>
-        <div>{ppgDif}%</div>
-
-        <div>APG:</div>
-        <div>{this.props.player.apg}</div>
-        <div>{apgEra}</div>
-        <div>{apgDif}%</div>
-
-        <div>RPG:</div>
-        <div>{this.props.player.rpg}</div>
-        <div>{rpgEra}</div>
-        <div>{rpgDif}%</div>
-
-        <div>BPG:</div>
-        <div>{this.props.player.bpg}</div>
-        <div>{bpgEra}</div>
-        <div>{bpgDif}%</div>
-
-        <div>SPG:</div>
-        <div>{this.props.player.spg}</div>
-        <div>{spgEra}</div>
-        <div>{spgDif}%</div>
-        
-      </div> */}
-      <Chart playerData = {playerData} eraData = {eraData} difference = {difference}/>
+     <div className='chart' >
+     
+        <Chart  playerData = {playerData} eraData = {eraData} difference = {difference}/>
       </div>
     );
   }

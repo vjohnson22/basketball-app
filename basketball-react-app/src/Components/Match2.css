@@ -1,9 +1,8 @@
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-     
+.chart {
+    border: 2px black solid;
+    margin: 20px auto;
+    max-width: 350px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
 }
-
-.wholeCard{
-    background-color: lightgray;
-  }

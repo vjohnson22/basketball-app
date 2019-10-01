@@ -5,14 +5,14 @@ import "tachyons";
 class Card extends Component {
   render() {
     return (
-      <div className="whole-card" style={{ width: "18rem" }}>
-        <div style={{ height: "auto" }}>
+      <div className="whole-card">
+        <div >
           <img
             className="br4 pa1 ma2 bw1 shadow-7"
             className="card-img-top"
             src={this.props.image}
             alt="Card image cap"
-            style={{ height: "400px" }}
+            
           />
         </div>
         <div className="card-body" style={{ textAlign: "center" }}>
