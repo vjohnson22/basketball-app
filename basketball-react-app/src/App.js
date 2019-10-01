@@ -33,8 +33,8 @@ class App extends Component {
             <Link to='/' className="active" >Home</Link>
             <Link to="/compare">ONExONE</Link>
             <Link to="/create">Add Players</Link>
-            <Link to="/update">Update Player</Link>
-            <Link to="/delete">Delete Player</Link>
+            {/* <Link to="/update">Update Player</Link>
+            <Link to="/delete">Delete Player</Link> */}
           </nav>
           <main>
             <Route path="/" exact component={Home} />
